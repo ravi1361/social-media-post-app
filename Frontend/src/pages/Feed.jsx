@@ -12,7 +12,8 @@ const Feed = () => {
   ])
 
 useEffect(() => {
-  axios.get("http://localhost:3000/posts")
+  // axios.get("http://localhost:3000/posts")
+  axios.get("https://social-media-post-backend-e6pkpclox-raviii2.vercel.app/posts")
   .then((res)=>{
     setPosts(res.data.posts)
     
