@@ -14,7 +14,7 @@ const CreatePost = () => {
 
     const formData = new FormData(e.target)
 
-    axios.post("https://social-media-post-app-mu.vercel.app/create-post" ,formData)
+    axios.post("https://social-media-post-backend-e6pkpclox-raviii2.vercel.app/create-post", formData)
     .then((res)=>{
       
       navigate("/feed")

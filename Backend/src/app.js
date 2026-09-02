@@ -7,8 +7,12 @@ const cors = require("cors")
 const app = express();
 // veryfirst use cors middleware
 // app.use(cors());
+
 app.use(cors({
-  origin: ["http://localhost:5174"],
+  origin: [
+    "http://localhost:5174",
+    "https://social-media-post-app-mu.vercel.app"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
