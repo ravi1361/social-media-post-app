@@ -8,7 +8,7 @@ const app = express();
 // veryfirst use cors middleware
 // app.use(cors());
 app.use(cors({
-  origin: "http://localhost:5174"
+  origin: "*"
 }));
 app.use(express.json());
 
