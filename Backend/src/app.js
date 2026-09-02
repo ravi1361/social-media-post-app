@@ -8,8 +8,12 @@ const app = express();
 // veryfirst use cors middleware
 // app.use(cors());
 app.use(cors({
-  origin: "*"
+  origin: ["http://localhost:5174"],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
+
+app.options("*", cors());
 app.use(express.json());
 
 const upload = multer({
