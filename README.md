@@ -10,6 +10,22 @@ A full-stack web application where users can create posts with an image and capt
 * 🗄️ Store post data in MongoDB
 * 🔗 REST API with Express.js
 * ⚛️ React frontend
+* ☁️ Deployed frontend and backend
+
+## 🌐 Live Demo
+
+### Frontend
+
+**Create Post:**
+https://social-media-post-app-mu.vercel.app/create-post
+
+**Feed:**
+https://social-media-post-app-mu.vercel.app/feed
+
+### Backend API
+
+**Get Posts:**
+https://social-media-post-backend-e6pkpclox-raviii2.vercel.app/posts
 
 ## 🛠️ Tech Stack
 
@@ -19,6 +35,7 @@ A full-stack web application where users can create posts with an image and capt
 * JavaScript
 * HTML
 * CSS
+* Axios
 
 ### Backend
 
@@ -26,6 +43,8 @@ A full-stack web application where users can create posts with an image and capt
 * Express.js
 * MongoDB
 * Mongoose
+* Multer
+* ImageKit
 
 ## 📂 Project Structure
 
@@ -55,8 +74,8 @@ project/
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd YOUR_PROJECT_FOLDER
+git clone https://github.com/ravi1361/social-media-post-app.git
+cd social-media-post-app
 ```
 
 ### 2. Install Frontend Dependencies
@@ -78,7 +97,7 @@ npm install
 Create a `.env` file inside the `backend` folder:
 
 ```env
-MONGODB_URI=your_mongodb_connection_string
+MONGO_URI=your_mongodb_connection_string
 PORT=3000
 ```
 
@@ -116,16 +135,18 @@ Creates a new post with an image and caption.
 GET /posts
 ```
 
-Fetches posts and displays them in the feed.
+Fetches posts from MongoDB and displays them in the feed.
 
 ## 🎯 What I Learned
 
 * Building a React frontend
 * Creating REST APIs using Express.js
 * Connecting MongoDB with Mongoose
-* Handling image uploads
+* Handling image uploads with Multer
+* Uploading images using ImageKit
 * Connecting frontend and backend
 * Using environment variables
+* Deploying frontend and backend with Vercel
 * Using Git and GitHub
 
 ## 👨‍💻 Author
